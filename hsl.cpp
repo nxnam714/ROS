@@ -118,8 +118,22 @@ int main(int narg, char** argv) {
 
     for (int j = 0; j < 3; j++){
         cout << ret[j][0] << " " << ret[j][1] << endl;
-        myfile << ret[j][0] << " " << ret[j][1] << endl;
+        //myfile << ret[j][0] << " " << ret[j][1] << endl;
     }
+    myfile << "("
+            << ret[0][0]
+            << " ,"
+            <<ret[2][0]
+            << " ,"
+            <<ret[1][0]
+            <<"), "
+            << "("
+            << ret[0][1]
+            << " ,"
+            <<ret[2][1]
+            << " ,"
+            <<ret[1][1]
+            <<")";
     myfile.close();
     return 0;
 }
