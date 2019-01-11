@@ -59,12 +59,12 @@ int main(int narg, char** argv) {
         }
     }
     for (int i = 0; i < result_length; i++){
-        cout << result[i][0] << " "
-                << result[i][1] << " "
-                << result[i][2] << endl;
+        // cout << result[i][0] << " "
+        //         << result[i][1] << " "
+        //         << result[i][2] << endl;
 
     }
-    cout << endl;
+    //cout << endl;
 
     for (int i = 0; i < 3; i++){
         ret[i][0] = result[0][i];
@@ -83,9 +83,9 @@ int main(int narg, char** argv) {
     }
 
     for (int j = 0; j < 3; j++){
-        cout << ret[j][0] << " " << ret[j][1] << endl;
+        //cout << ret[j][0] << " " << ret[j][1] << endl;
     }
-    cout << endl;
+    //cout << endl;
 
     for (int i = 0; i < result_length; i++){
         result[i][0] = result[i][0] * 179 / 360;
@@ -94,12 +94,12 @@ int main(int narg, char** argv) {
     }
 
     for (int i = 0; i < result_length; i++){
-        cout << result[i][0] << " "
+        /*cout << result[i][0] << " "
                 << result[i][1] << " "
-                << result[i][2] << endl;
+                << result[i][2] << endl;*/
 
     }
-    cout << endl;
+    //cout << endl;
     for (int i = 0; i < 3; i++){
         ret[i][0] = result[0][i];
         ret[i][1] = result[0][i];
@@ -118,6 +118,7 @@ int main(int narg, char** argv) {
 
     for (int j = 0; j < 3; j++){
         cout << ret[j][0] << " " << ret[j][1] << endl;
+        myfile << ret[j][0] << " " << ret[j][1] << endl;
     }
     myfile.close();
     return 0;
